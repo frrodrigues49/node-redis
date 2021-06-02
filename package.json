@@ -1,0 +1,25 @@
+{
+  "name": "node-redis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:frrodrigues49/node-redis.git",
+  "author": "Fagner <frodriguesbetim@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npm-run-all -p dev:*",
+    "dev:server": "nodemon src/server.js",
+    "dev:queue": "nodemon src/queue.js"
+  },
+  "dependencies": {
+    "bull": "^3.11.0",
+    "bull-board": "^0.5.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "sucrase": "^3.18.1"
+  }
+}
